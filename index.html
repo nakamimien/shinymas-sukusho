@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>シャニマススクショ 使い方</title>
+<style>
+  :root { --accent: #222222; --link: #1a66cc; --fg: #222222; --sub: #555555; --bg: #ffffff; --line: #e5e5e5; --soft: #f3f3f3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.8 "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif; color: var(--fg); background: var(--bg); }
+  header { background: var(--accent); color: #fff; padding: 18px 16px; }
+  header .in, main, footer .in { max-width: 820px; margin: 0 auto; }
+  header a { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; }
+  header nav { margin-top: 4px; font-size: 14px; }
+  header nav a { font-size: 14px; font-weight: 400; margin-right: 16px; text-decoration: underline; }
+  main { padding: 8px 16px 48px; }
+  h1 { font-size: 26px; margin: 28px 0 8px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; padding-bottom: 4px; border-bottom: 2px solid var(--accent); }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  a { color: var(--link); word-break: break-all; }
+  code { background: var(--soft); padding: 1px 5px; border-radius: 4px; font-size: .92em; overflow-wrap: anywhere; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); white-space: nowrap; }
+  li { margin: 2px 0; }
+  footer { border-top: 1px solid var(--line); color: var(--sub); font-size: 13px; padding: 16px; }
+</style>
+</head>
+<body>
+<header><div class="in"><a href="./">シャニマススクショ</a><nav><a href="./">使い方</a><a href="./privacy.html">プライバシーポリシー</a></nav></div></header>
+<main>
+<h1>シャニマススクショ 使い方</h1>
+<p>シャニマス（アイドルマスター シャイニーカラーズ）の画面を、右クリックやショートカットキーで撮影する Chrome の拡張機能です。非公式のファンメイドツールです。</p>
+<h2>1. 拡張機能を入れる</h2>
+<ol><li>パソコンの Google Chrome で、Chrome ウェブストアのシャニマススクショのページ（リンクは準備中です）を開きます（Windows で確かめています。Mac はまだ確かめていません）</li><li>「Chrome に追加」を押します</li><li>ツールバーのパズルのマークから「シャニマススクショ」をピン留めしておくと、設定をすぐ開けて便利です</li></ol>
+<p>入れる時に「shinycolors.enza.fun」のデータの読み取りと変更を求められます。ゲームの画面を画像にするためと、撮影の間だけスクロール欄を動かすためです。ゲームのサーバーや外のサーバーには何も送りません。</p>
+<p>シャニマスを開いたまま入れた場合は、そのタブを再読み込み（F5）してください。</p>
+<h2>2. 画面を撮る</h2>
+<ol><li>ゲーム画面の上で右クリックします</li><li>「シャニマススクショ」→「この画面を名前を付けて保存」か「この画面をコピー」を選びます</li></ol>
+<ul><li>コミュ並列閲覧などで画面を分割している時は、右クリックした側の半画面だけを撮ります。分割していない時は画面全体です</li><li>画像の大きさは、表示の大きさに関係なく、ゲーム内部の解像度（半画面なら 1136×640）です。お知らせなど、ゲームの絵の上に文章のページが重なって表示される画面は、表示されている大きさで撮ります</li></ul>
+<h2>3. スクロール欄をつなげて撮る</h2>
+<ol><li>スクロール欄（アルバムの一覧、ヘルプ、お知らせなど）の中身の上で右クリックします</li><li>「シャニマススクショ」→「スクロール欄をつなげて保存」か「スクロール欄をつなげてコピー」を選びます</li></ol>
+<ul><li>いちばん上からいちばん下まで自動でスクロールしながら撮って、縦長の1枚にします。終わると元の位置に戻ります</li><li>撮影には数秒かかり、その間はゲームを操作できません。画面の下に進み具合が出ます</li><li>撮影の間だけ、スクロールバーと、欄に重なっている表示（件数など）を隠します。終わると元に戻ります</li></ul>
+<h3>列に分ける</h3>
+<p>長い欄は縦長になりすぎるので、1枚の画像の中で2〜4列に並べられます。</p>
+<ol><li>ツールバーの「シャニマススクショ」のアイコン（黒いカメラ）を押します</li><li>「縦1列（分けない）」「2列に分ける」「3列に分ける」「4列に分ける」から選びます</li></ol>
+<ul><li>最初は「縦1列」です。選ぶとすぐに反映されます</li><li>列の切れ目は、行と行の間の空白を探して決めるので、文字の途中で切れにくくなっています</li><li>選んだ列数は、右クリックメニューの名前にも「（2列）」のように出ます</li></ul>
+<h2>4. ショートカットキー</h2>
+<div class="table"><table><thead><tr><th>キー</th><th>操作</th></tr></thead><tbody><tr><td>Ctrl+Shift+2</td><td>この画面をコピー</td></tr><tr><td>Ctrl+Shift+3</td><td>スクロール欄をつなげてコピー</td></tr></tbody></table></div>
+<ul><li>キーで撮る時は、マウスカーソルがある位置で、どの半画面・どのスクロール欄を撮るかを決めます。撮りたい所にカーソルを置いてから押してください</li><li>キーの変更や、「保存」の2つへのキーの割り当ては、chrome://extensions/shortcuts でできます。Ctrl か Alt を含む組み合わせにできます</li><li>キーを押しても何も起きない時は、ほかの拡張機能と同じキーになっていないか、同じページで確かめてください</li></ul>
+<h2>5. 困った時</h2>
+<div class="table"><table><thead><tr><th>出た表示・起きたこと</th><th>すること</th></tr></thead><tbody><tr><td>「スクロール欄が見つかりませんでした」</td><td>撮りたい欄の中身の上で右クリックしてください。それでも出る時は、タブを再読み込み（F5）してから試してください</td></tr><tr><td>「コピーできませんでした」</td><td>画像の確認画面が開くので、［コピー］を押してください</td></tr><tr><td>「画像が大きすぎます」</td><td>アイコンの設定で、列数を増やしてください</td></tr><tr><td>「マウスカーソルを撮りたい画面の上に置いてから、もう一度キーを押してください」</td><td>ページを開いてからマウスを動かしていない時に出ます。カーソルを撮りたい所に置いて、もう一度キーを押してください</td></tr><tr><td>右クリックしてもメニューに出ない</td><td>シャニマスのページ（<a href="https://shinycolors.enza.fun/">https://shinycolors.enza.fun/</a>）でだけ出ます</td></tr><tr><td>ゲームの更新の後で、スクロール欄がうまく撮れなくなった</td><td>ゲームの作りが変わると、影響を受けることがあります。下のフォームで教えてください</td></tr></tbody></table></div>
+<h2>6. ご注意</h2>
+<ul><li>非公式のツールです。株式会社バンダイナムコエンターテインメント様とは関係ありません。ご利用は自己責任でお願いします</li><li>撮影した画像はパソコンの中だけで作ります。ゲームのサーバーや外のサーバーには何も送りません</li><li>スクロール欄を撮る時は、撮影の間だけゲームの表示（スクロールの位置など）を動かし、終わると元に戻します。ゲームのサーバーとの通信には関わりません</li><li>撮影した画像の扱い（SNS への投稿など）は、ゲームの利用規約やガイドラインに従ってください</li></ul>
+<h2>7. 不具合・感想</h2>
+<p>こちらのフォームからお願いします：<a href="https://docs.google.com/forms/d/e/1FAIpQLSfQ7yBI4eH-l854eH1OT0nfjOCmyLGELIg15evPpiyyytgY1Q/viewform">https://docs.google.com/forms/d/e/1FAIpQLSfQ7yBI4eH-l854eH1OT0nfjOCmyLGELIg15evPpiyyytgY1Q/viewform</a></p>
+<p>コミュ読み君と同じフォームです。「シャニマススクショのこと」と書き添えてください。不具合の時は、どの画面で・何をしたら・どうなったか（出た表示があればその文）を書いてもらえると助かります。</p>
+</main>
+<footer><div class="in">非公式のファンメイドツールです。株式会社バンダイナムコエンターテインメント様とは関係ありません。</div></footer>
+</body>
+</html>
